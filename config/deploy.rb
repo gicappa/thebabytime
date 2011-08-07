@@ -4,7 +4,7 @@ set :repository,  "git@github.com:gicappa/thebabytime.git"
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-set :user, 'www-data'
+set :user, :www-data
 
 set :deploy_to, "/srv/www/thebabytime.com/htdocs"
 
@@ -29,16 +29,16 @@ namespace :deploy do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 
-  # desc "Installs required gems"
-  # task :gems, :roles => :app do
-  #   run "cd #{current_path} && sudo rake gems:install RAILS_ENV=production"
-  # end
-  # 
-  # after "deploy:setup", "deploy:gems"
-  # 
-  # before "deploy", "deploy:web:disable"
-  # 
-  # after "deploy", "deploy:web:enable"
+  desc "Installs required gems"
+  task :gems, :roles => :app do
+    run "cd #{current_path} && sudo rake gems:install RAILS_ENV=production"
+  end
+  
+  after "deploy:setup", "deploy:gems"
+  
+  before "deploy", "deploy:web:disable"
+  
+  after "deploy", "deploy:web:enable"
 end
 
 namespace :rake do
