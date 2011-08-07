@@ -12,7 +12,7 @@ set :scm_verbose, true
 set :git_shallow_clone, 1
 set :deploy_to, "/srv/www/thebabytime.com/htdocs"
 
-set :bundler_cmd, "/srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle install --deployment --without=development,test"
+#set :bundler_cmd, "/srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle install --deployment --without=development,test"
 #set :bundler_cmd, "/srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle"
 set :use_sudo, false
 
@@ -49,7 +49,7 @@ namespace :deploy do
   desc "precompile the assets"
   task :precompile_assets, :roles => :web, :except => { :no_release => true } do
     run "cd #{current_path}; rm -rf public/assets/*"
-    run "cd #{current_path}; RAILS_ENV=production bundle exec rake assets:precompile"
+    run "cd #{current_path}; RAILS_ENV=production /srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle exec rake assets:precompile"
   end
 end
 
@@ -61,26 +61,26 @@ namespace :rake do
   end
 end
 
-# namespace :bundler do
-#   task :create_symlink, :roles => :app do
-#     shared_dir = File.join(shared_path, 'bundle')
-#     release_dir = File.join(current_release, '.bundle')
-#     run("mkdir -p #{shared_dir} && ln -s #{shared_dir} #{release_dir}")
-#   end
-# 
-#   task :bundle_new_release, :roles => :app do
-#     bundler.create_symlink
-#     run "cd #{release_path} && bundle install --without test"
-#   end
-# 
-#   task :lock, :roles => :app do
-#     run "cd #{current_release} && bundle lock;"
-#   end
-# 
-#   task :unlock, :roles => :app do
-#     run "cd #{current_release} && bundle unlock;"
-#   end
-# end
+namespace :bundler do
+  task :create_symlink, :roles => :app do
+    shared_dir = File.join(shared_path, 'bundle')
+    release_dir = File.join(current_release, '.bundle')
+    run("mkdir -p #{shared_dir} && ln -s #{shared_dir} #{release_dir}")
+  end
+
+  task :bundle_new_release, :roles => :app do
+    bundler.create_symlink
+    run "cd #{release_path} && /srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle install --without test"
+  end
+
+  task :lock, :roles => :app do
+    run "cd #{current_release} && /srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle lock;"
+  end
+
+  task :unlock, :roles => :app do
+    run "cd #{current_release} && /srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle unlock;"
+  end
+end
 
 
 after "deploy:update_code" do
