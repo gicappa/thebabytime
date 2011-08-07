@@ -4,8 +4,11 @@ set :repository,  "git@github.com:gicappa/thebabytime.git"
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-set :user, :www-data
-
+set :user, "www-data"
+set :branch, "master"
+set :scm_verbose, true
+#set :deploy_via, :remote_cache
+#set :git_shallow_clone, 1
 set :deploy_to, "/srv/www/thebabytime.com/htdocs"
 
 set :use_sudo, false
@@ -31,7 +34,7 @@ namespace :deploy do
 
   desc "Installs required gems"
   task :gems, :roles => :app do
-    run "cd #{current_path} && sudo rake gems:install RAILS_ENV=production"
+    run "cd #{current_path} && rake gems:install RAILS_ENV=production"
   end
   
   after "deploy:setup", "deploy:gems"
