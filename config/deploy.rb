@@ -10,7 +10,7 @@ set :scm_verbose, true
 #set :deploy_via, :remote_cache
 #set :git_shallow_clone, 1
 set :deploy_to, "/srv/www/thebabytime.com/htdocs"
-
+set :bundler_cmd, "/srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle"
 set :use_sudo, false
 
 
