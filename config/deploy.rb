@@ -29,12 +29,50 @@ namespace :deploy do
     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
   end
 
-  desc "Installs required gems"
-  task :gems, :roles => :app do
-    run "cd #{current_path} && sudo rake gems:install RAILS_ENV=production"
-  end
-  after "deploy:setup", "deploy:gems"
-
-  before "deploy", "deploy:web:disable"
-  after "deploy", "deploy:web:enable"
+  # desc "Installs required gems"
+  # task :gems, :roles => :app do
+  #   run "cd #{current_path} && sudo rake gems:install RAILS_ENV=production"
+  # end
+  # 
+  # after "deploy:setup", "deploy:gems"
+  # 
+  # before "deploy", "deploy:web:disable"
+  # 
+  # after "deploy", "deploy:web:enable"
 end
+
+namespace :rake do
+  desc "Run a task on a remote server."
+  # run like: cap staging rake:invoke task=a_certain_task
+  task :invoke do
+    run("cd #{deploy_to}/current; /usr/bin/env rake #{ENV['task']} RAILS_ENV=#{rails_env}")
+  end
+end
+
+namespace :bundler do
+  task :create_symlink, :roles => :app do
+    shared_dir = File.join(shared_path, 'bundle')
+    release_dir = File.join(current_release, '.bundle')
+    run("mkdir -p #{shared_dir} && ln -s #{shared_dir} #{release_dir}")
+  end
+
+  task :bundle_new_release, :roles => :app do
+    bundler.create_symlink
+    run "cd #{release_path} && bundle install --without test"
+  end
+
+  task :lock, :roles => :app do
+    run "cd #{current_release} && bundle lock;"
+  end
+
+  task :unlock, :roles => :app do
+    run "cd #{current_release} && bundle unlock;"
+  end
+end
+
+
+after "deploy:update_code" do
+  bundler.bundle_new_release
+end
+
+after "deploy", "deploy:cleanup"
