@@ -10,7 +10,8 @@ set :scm_verbose, true
 #set :deploy_via, :remote_cache
 #set :git_shallow_clone, 1
 set :deploy_to, "/srv/www/thebabytime.com/htdocs"
-set :bundler_cmd, "/srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle"
+set :bundler_cmd, "/srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle install --deployment --without=development,test"
+#set :bundler_cmd, "/srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle"
 set :use_sudo, false
 
 
@@ -36,12 +37,18 @@ namespace :deploy do
   task :gems, :roles => :app do
     run "cd #{current_path} && rake gems:install RAILS_ENV=production"
   end
-  
+
   after "deploy:setup", "deploy:gems"
-  
+
   before "deploy", "deploy:web:disable"
-  
+
   after "deploy", "deploy:web:enable"
+
+  desc "precompile the assets"
+  task :precompile_assets, :roles => :web, :except => { :no_release => true } do
+    run "cd #{current_path}; rm -rf public/assets/*"
+    run "cd #{current_path}; RAILS_ENV=production bundle exec rake assets:precompile"
+  end
 end
 
 namespace :rake do
