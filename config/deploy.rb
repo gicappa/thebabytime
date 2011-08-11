@@ -22,6 +22,13 @@ role :app, "giankavh"                          # This may be the same as your `W
 role :db,  "giankavh", :primary => true # This is where Rails migrations will run
 role :db,  "giankavh"
 
+$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
+require "rvm/capistrano"                  # Load RVM's capistrano plugin.
+set :rvm_ruby_string, 'ruby-1.9.2-p290'        # Or whatever env you want it to run in.
+set :rvm_type, :user  # Copy the exact line. I really mean :user here
+
+
+
 #default_run_options[:pty] = true
 
 # if you're still using the script/reaper helper you will need
@@ -66,19 +73,22 @@ namespace :bundler do
     shared_dir = File.join(shared_path, 'bundle')
     release_dir = File.join(current_release, '.bundle')
     run("mkdir -p #{shared_dir} && ln -s #{shared_dir} #{release_dir}")
+    run("pwd")
+    run("whoami")
+    run("export")
   end
 
   task :bundle_new_release, :roles => :app do
     bundler.create_symlink
-    run "cd #{release_path} && /srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle install --without test"
+    run "cd #{release_path} && bundle install --without test"
   end
 
   task :lock, :roles => :app do
-    run "cd #{current_release} && /srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle lock;"
+    run "cd #{current_release} && bundle lock;"
   end
 
   task :unlock, :roles => :app do
-    run "cd #{current_release} && /srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle unlock;"
+    run "cd #{current_release} && bundle unlock;"
   end
 end
 
