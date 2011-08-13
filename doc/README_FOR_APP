@@ -1,2 +1,33 @@
 Use this README file to introduce your application and point to useful places in the API for learning more.
 Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+
+
+== Specs
+registrazione di un bambino 
+	Nome 
+	Cognome
+	Username
+	Data di nascita 
+	Peso iniziale
+	
+Archiviare poppata del bambino
+	data/tempo di inizio poppata
+	data/tempo di fine poppata
+	Seno destro o sinistro
+	possibilità di registrare lo start e lo sto della poppata con un tasto.
+                  
+Archiviare il cambio del pannolino
+	data/tempo cambio pannolino                  
+	se presente cacca
+	se presente pipì
+	possibilità di segnalare il cambio di pannolino con un tasto
+		
+Calcolare in un dato giorno
+	durata media di poppata
+	durata totale delle poppate
+	
+	
+	
+Tema: censimento dei pianti. Si potrebbe provare a censire il tipo di pianto con le informazioni di movimenti del corpo etc in modo da comprendere quale possa essere il problema che affligge il bimbo. Si potrebbe anche pensare di far uploadare un file audio. Pensando ad uno sviluppo mobile potrebbe essere registrato dal telefono. 
+
+
