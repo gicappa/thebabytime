@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  start: 2011-08-14 01:25:09
+  end: 2011-08-14 01:25:09
+  breast: MyString
+
+two:
+  start: 2011-08-14 01:25:09
+  end: 2011-08-14 01:25:09
+  breast: MyString

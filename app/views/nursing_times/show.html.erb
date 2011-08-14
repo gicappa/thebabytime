@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Start:</b>
+  <%= @nursing_time.start %>
+</p>
+
+<p>
+  <b>End:</b>
+  <%= @nursing_time.end %>
+</p>
+
+<p>
+  <b>Breast:</b>
+  <%= @nursing_time.breast %>
+</p>
+
+
+<%= link_to 'Edit', edit_nursing_time_path(@nursing_time) %> |
+<%= link_to 'Back', nursing_times_path %>

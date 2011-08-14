@@ -1,4 +1,6 @@
 Thebabytime::Application.routes.draw do
+  resources :nursing_times
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +50,7 @@ Thebabytime::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'nursing_times#index'
 
   # See how all your routes lay out with "rake routes"
 

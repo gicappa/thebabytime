@@ -1,0 +1,27 @@
+<h1>Listing nursing_times</h1>
+
+<table>
+  <tr>
+    <th>Start</th>
+    <th>End</th>
+    <th>Breast</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nursing_times.each do |nursing_time| %>
+  <tr>
+    <td><%= nursing_time.start %></td>
+    <td><%= nursing_time.end %></td>
+    <td><%= nursing_time.breast %></td>
+    <td><%= link_to 'Show', nursing_time %></td>
+    <td><%= link_to 'Edit', edit_nursing_time_path(nursing_time) %></td>
+    <td><%= link_to 'Destroy', nursing_time, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nursing time', new_nursing_time_path %>

@@ -17,7 +17,7 @@ Archiviare poppata del bambino
 	possibilità di registrare lo start e lo sto della poppata con un tasto.
                   
 Archiviare il cambio del pannolino
-	data/tempo cambio pannolino                  
+	data/tempo cambio pannolino (nappy o diaper)
 	se presente cacca
 	se presente pipì
 	possibilità di segnalare il cambio di pannolino con un tasto
