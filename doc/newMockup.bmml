@@ -1,229 +1,208 @@
-<mockup version="1.0" skin="sketch" measuredW="576" measuredH="1017" mockupW="576" mockupH="1017">
+<mockup version="1.0" skin="sketch" measuredW="1163" measuredH="966" mockupW="1163" mockupH="966">
   <controls>
-    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="576" h="508" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+    <control controlID="70" controlTypeID="__group__" x="587" y="3" w="576" h="416" measuredW="576" measuredH="416" zOrder="2" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="576" h="416" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="70">
+          <controlProperties>
+            <text>A%20Web%20Page%0Ahttp%3A//thebabytime.com</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="24" y="87" w="-1" h="-1" measuredW="273" measuredH="56" zOrder="1" locked="false" isInGroup="70">
+          <controlProperties>
+            <text>The%20Baby%20Time</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="__group__" x="27" y="143" w="294" h="160" measuredW="294" measuredH="160" zOrder="2" locked="false" isInGroup="70">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Button" x="0" y="44" w="135" h="61" measuredW="50" measuredH="28" zOrder="0" locked="false" isInGroup="2">
+              <controlProperties>
+                <text>Left</text>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="156" y="44" w="138" h="61" measuredW="55" measuredH="28" zOrder="1" locked="false" isInGroup="2">
+              <controlProperties>
+                <text>Right</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::SubTitle" x="0" y="0" w="-1" h="-1" measuredW="77" measuredH="37" zOrder="2" locked="false" isInGroup="2">
+              <controlProperties>
+                <color>0</color>
+                <text>Breast</text>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="0" y="120" w="294" h="40" measuredW="164" measuredH="28" zOrder="3" locked="false" isInGroup="2">
+              <controlProperties>
+                <state>up</state>
+                <text>Finish%20Nurse%20Time%20Block</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="523" w="576" h="443" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <text>A%20Web%20Page%0Ahttp%3A//thebabytime.com</text>
       </controlProperties>
     </control>
-    <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="26" y="88" w="-1" h="-1" measuredW="273" measuredH="56" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="76" controlTypeID="com.balsamiq.mockups::Title" x="24" y="610" w="-1" h="-1" measuredW="273" measuredH="56" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <text>The%20Baby%20Time</text>
       </controlProperties>
     </control>
-    <control controlID="2" controlTypeID="com.balsamiq.mockups::Button" x="26" y="159" w="211" h="116" measuredW="129" measuredH="28" zOrder="2" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Start%20Nurse%20Time</text>
-      </controlProperties>
-    </control>
-    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="250" y="159" w="211" h="116" measuredW="123" measuredH="28" zOrder="3" locked="false" isInGroup="-1">
-      <controlProperties>
-        <state>disabled</state>
-        <text>Stop%20Nurse%20Time</text>
-      </controlProperties>
-    </control>
-    <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="26" y="355" w="-1" h="-1" measuredW="111" measuredH="23" zOrder="4" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Start%20Time%3A%2022%3A13</text>
-      </controlProperties>
-    </control>
-    <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="154" y="354" w="-1" h="-1" measuredW="98" measuredH="23" zOrder="5" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>End%20Time%3A%2023%3A10</text>
-      </controlProperties>
-    </control>
-    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="266" y="354" w="-1" h="-1" measuredW="79" measuredH="23" zOrder="6" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Breast%3A%20Left</text>
-      </controlProperties>
-    </control>
-    <control controlID="7" controlTypeID="com.balsamiq.mockups::Link" x="386" y="356" w="-1" h="-1" measuredW="28" measuredH="23" zOrder="7" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>edit</text>
-      </controlProperties>
-    </control>
-    <control controlID="8" controlTypeID="com.balsamiq.mockups::Link" x="422" y="356" w="-1" h="-1" measuredW="43" measuredH="23" zOrder="8" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>delete</text>
-      </controlProperties>
-    </control>
-    <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="26" y="385" w="-1" h="-1" measuredW="111" measuredH="23" zOrder="9" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Start%20Time%3A%2022%3A13</text>
-      </controlProperties>
-    </control>
-    <control controlID="10" controlTypeID="com.balsamiq.mockups::Label" x="154" y="384" w="-1" h="-1" measuredW="98" measuredH="23" zOrder="10" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>End%20Time%3A%2023%3A10</text>
-      </controlProperties>
-    </control>
-    <control controlID="11" controlTypeID="com.balsamiq.mockups::Label" x="266" y="384" w="-1" h="-1" measuredW="79" measuredH="23" zOrder="11" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Breast%3A%20Left</text>
-      </controlProperties>
-    </control>
-    <control controlID="12" controlTypeID="com.balsamiq.mockups::Link" x="386" y="386" w="-1" h="-1" measuredW="28" measuredH="23" zOrder="12" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>edit</text>
-      </controlProperties>
-    </control>
-    <control controlID="13" controlTypeID="com.balsamiq.mockups::Link" x="422" y="386" w="-1" h="-1" measuredW="43" measuredH="23" zOrder="13" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>delete</text>
-      </controlProperties>
-    </control>
-    <control controlID="14" controlTypeID="com.balsamiq.mockups::Label" x="26" y="415" w="-1" h="-1" measuredW="111" measuredH="23" zOrder="14" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Start%20Time%3A%2022%3A13</text>
-      </controlProperties>
-    </control>
-    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="154" y="414" w="-1" h="-1" measuredW="98" measuredH="23" zOrder="15" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>End%20Time%3A%2023%3A10</text>
-      </controlProperties>
-    </control>
-    <control controlID="16" controlTypeID="com.balsamiq.mockups::Label" x="266" y="414" w="-1" h="-1" measuredW="79" measuredH="23" zOrder="16" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Breast%3A%20Left</text>
-      </controlProperties>
-    </control>
-    <control controlID="17" controlTypeID="com.balsamiq.mockups::Link" x="386" y="416" w="-1" h="-1" measuredW="28" measuredH="23" zOrder="17" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>edit</text>
-      </controlProperties>
-    </control>
-    <control controlID="18" controlTypeID="com.balsamiq.mockups::Link" x="422" y="416" w="-1" h="-1" measuredW="43" measuredH="23" zOrder="18" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>delete</text>
-      </controlProperties>
-    </control>
-    <control controlID="19" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="509" w="576" h="508" measuredW="450" measuredH="400" zOrder="19" locked="false" isInGroup="-1">
+    <control controlID="82" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="577" h="513" measuredW="450" measuredH="400" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <text>A%20Web%20Page%0Ahttp%3A//thebabytime.com</text>
       </controlProperties>
     </control>
-    <control controlID="21" controlTypeID="com.balsamiq.mockups::Title" x="24" y="596" w="-1" h="-1" measuredW="273" measuredH="56" zOrder="20" locked="false" isInGroup="-1">
+    <control controlID="83" controlTypeID="com.balsamiq.mockups::Title" x="26" y="88" w="-1" h="-1" measuredW="273" measuredH="56" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <text>The%20Baby%20Time</text>
       </controlProperties>
     </control>
-    <control controlID="22" controlTypeID="com.balsamiq.mockups::Button" x="26" y="667" w="211" h="116" measuredW="129" measuredH="28" zOrder="21" locked="false" isInGroup="-1">
-      <controlProperties>
-        <state>disabled</state>
-        <text>Start%20Nurse%20Time</text>
-      </controlProperties>
+    <control controlID="85" controlTypeID="__group__" x="26" y="152" w="211" h="180" measuredW="211" measuredH="180" zOrder="5" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Button" x="0" y="0" w="211" h="55" measuredW="91" measuredH="28" zOrder="0" locked="false" isInGroup="85">
+          <controlProperties>
+            <text>Nurse%20Time</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Button" x="0" y="62" w="211" h="55" measuredW="109" measuredH="28" zOrder="1" locked="false" isInGroup="85">
+          <controlProperties>
+            <state>up</state>
+            <text>Change%20Nappy</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Button" x="0" y="125" w="211" h="55" measuredW="79" measuredH="28" zOrder="2" locked="false" isInGroup="85">
+          <controlProperties>
+            <state>up</state>
+            <text>Nap%20Time</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
     </control>
-    <control controlID="23" controlTypeID="com.balsamiq.mockups::Button" x="252" y="667" w="211" h="116" measuredW="123" measuredH="28" zOrder="22" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Stop%20Nurse%20Time</text>
-      </controlProperties>
+    <control controlID="109" controlTypeID="__group__" x="24" y="356" w="439" h="74" measuredW="439" measuredH="74" zOrder="9" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="439" h="25" measuredW="439" measuredH="25" zOrder="0" locked="false" isInGroup="109">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="1" w="-1" h="-1" measuredW="111" measuredH="23" zOrder="0" locked="false" isInGroup="0">
+              <controlProperties>
+                <text>Start%20Time%3A%2022%3A13</text>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="128" y="0" w="-1" h="-1" measuredW="98" measuredH="23" zOrder="1" locked="false" isInGroup="0">
+              <controlProperties>
+                <text>End%20Time%3A%2023%3A10</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="240" y="0" w="-1" h="-1" measuredW="79" measuredH="23" zOrder="2" locked="false" isInGroup="0">
+              <controlProperties>
+                <text>Breast%3A%20Left</text>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Link" x="360" y="2" w="-1" h="-1" measuredW="28" measuredH="23" zOrder="3" locked="false" isInGroup="0">
+              <controlProperties>
+                <text>edit</text>
+              </controlProperties>
+            </control>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::Link" x="396" y="2" w="-1" h="-1" measuredW="43" measuredH="23" zOrder="4" locked="false" isInGroup="0">
+              <controlProperties>
+                <text>delete</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="1" controlTypeID="__group__" x="0" y="25" w="439" h="25" measuredW="439" measuredH="25" zOrder="1" locked="false" isInGroup="109">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="1" w="-1" h="-1" measuredW="111" measuredH="23" zOrder="0" locked="false" isInGroup="1">
+              <controlProperties>
+                <text>Start%20Time%3A%2022%3A13</text>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="128" y="0" w="-1" h="-1" measuredW="98" measuredH="23" zOrder="1" locked="false" isInGroup="1">
+              <controlProperties>
+                <text>End%20Time%3A%2023%3A10</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="240" y="0" w="-1" h="-1" measuredW="79" measuredH="23" zOrder="2" locked="false" isInGroup="1">
+              <controlProperties>
+                <text>Breast%3A%20Left</text>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Link" x="360" y="2" w="-1" h="-1" measuredW="28" measuredH="23" zOrder="3" locked="false" isInGroup="1">
+              <controlProperties>
+                <text>edit</text>
+              </controlProperties>
+            </control>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::Link" x="396" y="2" w="-1" h="-1" measuredW="43" measuredH="23" zOrder="4" locked="false" isInGroup="1">
+              <controlProperties>
+                <text>delete</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="2" controlTypeID="__group__" x="0" y="49" w="439" h="25" measuredW="439" measuredH="25" zOrder="2" locked="false" isInGroup="109">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Label" x="0" y="1" w="-1" h="-1" measuredW="111" measuredH="23" zOrder="0" locked="false" isInGroup="2">
+              <controlProperties>
+                <text>Start%20Time%3A%2022%3A13</text>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="128" y="0" w="-1" h="-1" measuredW="98" measuredH="23" zOrder="1" locked="false" isInGroup="2">
+              <controlProperties>
+                <text>End%20Time%3A%2023%3A10</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="240" y="0" w="-1" h="-1" measuredW="79" measuredH="23" zOrder="2" locked="false" isInGroup="2">
+              <controlProperties>
+                <text>Breast%3A%20Left</text>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Link" x="360" y="2" w="-1" h="-1" measuredW="28" measuredH="23" zOrder="3" locked="false" isInGroup="2">
+              <controlProperties>
+                <text>edit</text>
+              </controlProperties>
+            </control>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::Link" x="396" y="2" w="-1" h="-1" measuredW="43" measuredH="23" zOrder="4" locked="false" isInGroup="2">
+              <controlProperties>
+                <text>delete</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
     </control>
-    <control controlID="24" controlTypeID="com.balsamiq.mockups::Label" x="24" y="863" w="-1" h="-1" measuredW="111" measuredH="23" zOrder="23" locked="false" isInGroup="-1">
+    <control controlID="112" controlTypeID="com.balsamiq.mockups::Label" x="24" y="672" w="-1" h="-1" measuredW="111" measuredH="23" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Start%20Time%3A%2022%3A13</text>
       </controlProperties>
     </control>
-    <control controlID="25" controlTypeID="com.balsamiq.mockups::Label" x="152" y="862" w="-1" h="-1" measuredW="98" measuredH="23" zOrder="24" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>End%20Time%3A%2023%3A10</text>
-      </controlProperties>
-    </control>
-    <control controlID="26" controlTypeID="com.balsamiq.mockups::Label" x="264" y="862" w="-1" h="-1" measuredW="79" measuredH="23" zOrder="25" locked="false" isInGroup="-1">
+    <control controlID="114" controlTypeID="com.balsamiq.mockups::Label" x="233" y="671" w="-1" h="-1" measuredW="79" measuredH="23" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Breast%3A%20Left</text>
       </controlProperties>
     </control>
-    <control controlID="27" controlTypeID="com.balsamiq.mockups::Link" x="384" y="864" w="-1" h="-1" measuredW="28" measuredH="23" zOrder="26" locked="false" isInGroup="-1">
+    <control controlID="117" controlTypeID="com.balsamiq.mockups::Label" x="24" y="704" w="-1" h="-1" measuredW="86" measuredH="23" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>edit</text>
+        <text>Elapsed%20Time%3A</text>
       </controlProperties>
     </control>
-    <control controlID="28" controlTypeID="com.balsamiq.mockups::Link" x="420" y="864" w="-1" h="-1" measuredW="43" measuredH="23" zOrder="27" locked="false" isInGroup="-1">
+    <control controlID="118" controlTypeID="com.balsamiq.mockups::Button" x="25" y="735" w="294" h="40" measuredW="152" measuredH="28" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>delete</text>
+        <state>up</state>
+        <text>Stop%20Nurse%20Time%20Slot</text>
       </controlProperties>
     </control>
-    <control controlID="29" controlTypeID="com.balsamiq.mockups::Label" x="24" y="893" w="-1" h="-1" measuredW="111" measuredH="23" zOrder="28" locked="false" isInGroup="-1">
+    <control controlID="119" controlTypeID="com.balsamiq.mockups::SubTitle" x="250" y="696" w="-1" h="-1" measuredW="62" measuredH="37" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Start%20Time%3A%2022%3A13</text>
+        <color>0</color>
+        <text>09%3A12</text>
       </controlProperties>
     </control>
-    <control controlID="30" controlTypeID="com.balsamiq.mockups::Label" x="152" y="892" w="-1" h="-1" measuredW="98" measuredH="23" zOrder="29" locked="false" isInGroup="-1">
+    <control controlID="120" controlTypeID="com.balsamiq.mockups::Button" x="24" y="783" w="294" h="40" measuredW="135" measuredH="28" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>End%20Time%3A%2023%3A10</text>
-      </controlProperties>
-    </control>
-    <control controlID="31" controlTypeID="com.balsamiq.mockups::Label" x="264" y="892" w="-1" h="-1" measuredW="79" measuredH="23" zOrder="30" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Breast%3A%20Left</text>
-      </controlProperties>
-    </control>
-    <control controlID="32" controlTypeID="com.balsamiq.mockups::Link" x="384" y="894" w="-1" h="-1" measuredW="28" measuredH="23" zOrder="31" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>edit</text>
-      </controlProperties>
-    </control>
-    <control controlID="33" controlTypeID="com.balsamiq.mockups::Link" x="420" y="894" w="-1" h="-1" measuredW="43" measuredH="23" zOrder="32" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>delete</text>
-      </controlProperties>
-    </control>
-    <control controlID="34" controlTypeID="com.balsamiq.mockups::Label" x="24" y="923" w="-1" h="-1" measuredW="111" measuredH="23" zOrder="33" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Start%20Time%3A%2022%3A13</text>
-      </controlProperties>
-    </control>
-    <control controlID="35" controlTypeID="com.balsamiq.mockups::Label" x="152" y="922" w="-1" h="-1" measuredW="98" measuredH="23" zOrder="34" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>End%20Time%3A%2023%3A10</text>
-      </controlProperties>
-    </control>
-    <control controlID="36" controlTypeID="com.balsamiq.mockups::Label" x="264" y="922" w="-1" h="-1" measuredW="79" measuredH="23" zOrder="35" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Breast%3A%20Left</text>
-      </controlProperties>
-    </control>
-    <control controlID="37" controlTypeID="com.balsamiq.mockups::Link" x="384" y="924" w="-1" h="-1" measuredW="28" measuredH="23" zOrder="36" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>edit</text>
-      </controlProperties>
-    </control>
-    <control controlID="38" controlTypeID="com.balsamiq.mockups::Link" x="420" y="924" w="-1" h="-1" measuredW="43" measuredH="23" zOrder="37" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>delete</text>
-      </controlProperties>
-    </control>
-    <control controlID="39" controlTypeID="com.balsamiq.mockups::SubTitle" x="210" y="805" w="-1" h="-1" measuredW="62" measuredH="37" zOrder="38" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>10%3A32</text>
-      </controlProperties>
-    </control>
-    <control controlID="40" controlTypeID="com.balsamiq.mockups::SubTitle" x="210" y="294" w="-1" h="-1" measuredW="68" measuredH="37" zOrder="39" locked="false" isInGroup="-1">
-      <controlProperties>
-        <color>6710886</color>
-        <text>00%3A00</text>
-      </controlProperties>
-    </control>
-    <control controlID="41" controlTypeID="com.balsamiq.mockups::ComboBox" x="87" y="300" w="88" h="-1" measuredW="58" measuredH="23" zOrder="40" locked="false" isInGroup="-1">
-      <controlProperties>
-        <state>closed</state>
-        <text>Left%0ARight</text>
-      </controlProperties>
-    </control>
-    <control controlID="42" controlTypeID="com.balsamiq.mockups::Label" x="26" y="300" w="-1" h="-1" measuredW="48" measuredH="23" zOrder="41" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Breast%3A</text>
-      </controlProperties>
-    </control>
-    <control controlID="43" controlTypeID="com.balsamiq.mockups::ComboBox" x="87" y="811" w="88" h="-1" measuredW="58" measuredH="23" zOrder="42" locked="false" isInGroup="-1">
-      <controlProperties>
-        <state>disabledClosed</state>
-        <text>Left%0ARight</text>
-      </controlProperties>
-    </control>
-    <control controlID="44" controlTypeID="com.balsamiq.mockups::Label" x="26" y="811" w="-1" h="-1" measuredW="48" measuredH="23" zOrder="43" locked="false" isInGroup="-1">
-      <controlProperties>
-        <state>disabled</state>
-        <text>Breast%3A</text>
+        <state>up</state>
+        <text>Cancel%20Nurse%20Time</text>
       </controlProperties>
     </control>
   </controls>
