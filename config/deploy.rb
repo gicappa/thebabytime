@@ -73,9 +73,6 @@ namespace :bundler do
     shared_dir = File.join(shared_path, 'bundle')
     release_dir = File.join(current_release, '.bundle')
     run("mkdir -p #{shared_dir} && ln -s #{shared_dir} #{release_dir}")
-    run("pwd")
-    run("whoami")
-    run("export")
   end
 
   task :bundle_new_release, :roles => :app do
