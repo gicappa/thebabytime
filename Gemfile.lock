@@ -147,7 +147,6 @@ DEPENDENCIES
   rails (= 3.1.0.rc4)
   ruby-debug19
   sass-rails (~> 3.1.0.rc)
-  sprockets (= 2.0.0.beta.10)
   sqlite3
   turn
   uglifier
