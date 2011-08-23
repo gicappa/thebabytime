@@ -14,7 +14,6 @@ set :deploy_to, "/srv/www/thebabytime.com/htdocs"
 
 set :use_sudo, false
 
-
 role :web, "giankavh"                          # Your HTTP server, Apache/etc
 role :app, "giankavh"                          # This may be the same as your `Web` server
 role :db,  "giankavh", :primary => true # This is where Rails migrations will run
@@ -24,8 +23,8 @@ $:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory
 
 require "rvm/capistrano"                  # Load RVM's capistrano plugin.
 set :rvm_ruby_string, 'ruby-1.9.2-p290'        # Or whatever env you want it to run in.
-set :rvm_type, :system  # Copy the exact line. I really mean :user here
-# set :rvm_type, :user  # Copy the exact line. I really mean :user here
+#set :rvm_type, :system  # Copy the exact line. I really mean :user here
+set :rvm_type, :user  # Copy the exact line. I really mean :user here
 
 set :normalize_asset_timestamps, false
 
