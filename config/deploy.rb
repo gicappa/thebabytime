@@ -1,3 +1,5 @@
+require "rvm/capistrano"                  # Load RVM's capistrano plugin.
+
 set :application, "thebabytime"
 set :repository,  "git@github.com:gicappa/thebabytime.git"
 
@@ -12,8 +14,6 @@ set :scm_verbose, true
 set :git_shallow_clone, 1
 set :deploy_to, "/srv/www/thebabytime.com/htdocs"
 
-#set :bundler_cmd, "/srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle install --deployment --without=development,test"
-#set :bundler_cmd, "/srv/www/.rvm/gems/ruby-1.9.2-p290/bin/bundle"
 set :use_sudo, false
 
 
@@ -23,9 +23,11 @@ role :db,  "giankavh", :primary => true # This is where Rails migrations will ru
 role :db,  "giankavh"
 
 $:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
-require "rvm/capistrano"                  # Load RVM's capistrano plugin.
+
+
 set :rvm_ruby_string, 'ruby-1.9.2-p290'        # Or whatever env you want it to run in.
-set :rvm_type, :user  # Copy the exact line. I really mean :user here
+set :rvm_type, :system  # Copy the exact line. I really mean :user here
+# set :rvm_type, :user  # Copy the exact line. I really mean :user here
 
 set :normalize_asset_timestamps, false
 
